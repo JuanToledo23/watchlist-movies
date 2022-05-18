@@ -1,0 +1,39 @@
+<app-toolbar></app-toolbar>
+<div class="movie-container">
+    <div class="image-container">
+        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}">
+    </div>
+    <div class="info">
+        <h1 class="title">{{movie.original_title}}</h1>
+        <p class="overview">{{movie.overview}}</p>
+        <br/>
+        <h3 class="title">Genres:</h3>
+        <div class="genres">
+            <p *ngFor="let item of movie.genres">{{item.name}}</p>
+        </div>
+        <br/>
+        <h3 class="title">Release Date:</h3>
+        <div>
+            <p>{{movie.release_date}}</p>
+        </div>
+        <br/>
+        <h3 class="title">Homepage:</h3>
+        <div>
+            <a [href]="movie.homepage" target="_blank">{{movie.homepage}}</a>
+        </div>
+        <br/>
+        <h3 class="title">Score:</h3>
+        <div>
+            <p>{{movie.vote_average}}</p>
+        </div>
+    </div>
+</div>
+
+<div class="cards-container">
+    <h2>Similar movies</h2>
+    <div class="cards" infiniteScroll (scrolled)="onScrollDown()">
+        <ng-container *ngFor="let movie of movies">
+            <app-card [info]="movie"></app-card>
+        </ng-container>
+    </div>
+</div>

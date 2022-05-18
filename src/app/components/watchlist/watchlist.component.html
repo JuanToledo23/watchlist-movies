@@ -1,0 +1,8 @@
+<app-toolbar></app-toolbar>
+<div class="cards-container">
+    <div class="cards" infiniteScroll>
+        <ng-container *ngFor="let movie of movies">
+            <app-card [info]="movie"></app-card>
+        </ng-container>
+    </div>
+</div>

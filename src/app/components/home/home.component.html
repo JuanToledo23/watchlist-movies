@@ -1,0 +1,25 @@
+<app-toolbar></app-toolbar>
+<section class="button-row">
+    <mat-button-toggle-group>
+        <mat-button-toggle value="top" (click)="getMovies(0, true)" selected>Top Rate</mat-button-toggle>
+        <mat-button-toggle value="now" (click)="getMovies(1, true)">Now Playing</mat-button-toggle>
+        <mat-button-toggle value="popular" (click)="getMovies(2, true)">Popular</mat-button-toggle>
+        <mat-button-toggle value="upcoming" (click)="getMovies(3, true)">Upcoming</mat-button-toggle>
+    </mat-button-toggle-group>
+</section>
+
+<section class="filter-container" >
+    <h2 class="title">Order by:</h2>
+    <div class="buttons">
+        <button mat-flat-button (click)="topRated()">Top rated</button>
+        <button mat-flat-button (click)="worstRated()">Worst rated</button>
+    </div>
+</section>
+
+<div class="cards-container">
+    <div class="cards" infiniteScroll (scrolled)="onScrollDown()">
+        <ng-container *ngFor="let movie of movies">
+            <app-card [info]="movie"></app-card>
+        </ng-container>
+    </div>
+</div>

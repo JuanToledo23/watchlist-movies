@@ -1,0 +1,51 @@
+.movie-container {
+    display: flex;
+    margin: 1rem;
+}
+.movie-container > div {
+    margin: 1rem;
+}
+.image-container > img {
+    width: 300px;
+}
+
+* {
+    color: white;
+}
+
+.genres {
+    display: flex;
+}
+
+.genres > p {
+    padding-right: 10px;
+}
+
+.title {
+    margin: 0;
+}
+
+.cards-container {
+    width: 95%;
+    margin: 15px auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+  margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .movie-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container {
+       display: flex;
+       justify-content: center;
+    }
+}

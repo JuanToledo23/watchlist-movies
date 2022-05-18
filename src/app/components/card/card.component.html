@@ -1,0 +1,29 @@
+<mat-card class="card">
+    <div class="movie-container" [routerLink]="['/movie/', info.id]">
+        <mat-card-header>
+            <mat-card-title class="title">{{info.original_title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="poster">
+                <img lazyLoad="https://image.tmdb.org/t/p/w500{{info.poster_path}}">
+            </div>
+            <p class="ellipsis">
+                {{info.overview}}
+            </p>
+            <div class="score">
+                <h3 class="title">
+                    {{info.vote_average}}
+                </h3>
+            </div>
+        </mat-card-content>
+    </div>
+    <div class="buttons">
+        <button mat-mini-fab color="primary" *ngIf="!info.watchlist" (click)="addMovie()" matTooltip="Add to watchlist">
+            <mat-icon>list</mat-icon>
+        </button>
+
+        <button mat-mini-fab color="primary" *ngIf="info.watchlist" (click)="deleteMovie(info.idF)" matTooltip="Remove from watchlist">
+            <mat-icon>delete_sweep</mat-icon>
+        </button>
+    </div>
+</mat-card>

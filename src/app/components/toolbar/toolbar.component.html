@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+    <span>{{name}}</span>
+    <div class="button-row">
+        <button mat-flat-button routerLink="/home">Home</button>
+        <button mat-flat-button routerLink="/watchlist">Watchlist</button>
+    </div>
+    <span class="spacer"></span>
+    <button mat-flat-button color="primary" (click)="logOut()">Cerrar sesion</button>
+</mat-toolbar>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "movies-8d681": {
+      "hosting": {
+        "movies": [
+          "movies-8d681"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "movies-8d681"
+  }
+}
