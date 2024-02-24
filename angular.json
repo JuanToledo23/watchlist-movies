@@ -109,8 +109,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "movies:build:production",
-            "firebaseProject": "movies-8d681",
-            "firebaseHostingSite": "movies-8d681"
+            "firebaseProject": "watchlist-movies",
+            "firebaseHostingSite": "watchlist-movies"
           }
         }
       }

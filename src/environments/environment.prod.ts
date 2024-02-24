@@ -1,11 +1,11 @@
 export const environment = {
   firebase: {
-    projectId: 'movies-8d681',
-    appId: '1:722322447936:web:682e5b45fee8be2bfd89a5',
-    storageBucket: 'movies-8d681.appspot.com',
-    apiKey: 'AIzaSyA7z2cJUOLw0bgG2lPOrWLrEymKK96ykOg',
-    authDomain: 'movies-8d681.firebaseapp.com',
-    messagingSenderId: '722322447936',
+    apiKey: "AIzaSyBvPXOPMptIo48AMpFeo34CvYisO7xEwgE",
+    authDomain: "watchlist-movies.firebaseapp.com",
+    projectId: "watchlist-movies",
+    storageBucket: "watchlist-movies.appspot.com",
+    messagingSenderId: "567963114049",
+    appId: "1:567963114049:web:fc97970207daadd35844c0"
   },
   production: true,
   api_key: '61a6b28bc178988a1953691e5af991f9'

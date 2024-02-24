@@ -18,6 +18,7 @@
     color: #5d5e5e;
     height: calc(100vh / 1.64);
     background-color: rgb(39, 39, 39); 
+    padding-bottom: 80px;
   }
   
   .ellipsis {

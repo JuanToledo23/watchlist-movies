@@ -1,14 +1,14 @@
 {
   "targets": {
-    "movies-8d681": {
+    "watchlist-movies": {
       "hosting": {
         "movies": [
-          "movies-8d681"
+          "watchlist-movies"
         ]
       }
     }
   },
   "projects": {
-    "default": "movies-8d681"
+    "default": "watchlist-movies"
   }
 }
