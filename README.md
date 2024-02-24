@@ -1,6 +1,12 @@
-# Movies
+# Prueba técnica lista de favoritos de peliculas
+
+Prueba tecnica Prueba técnica lista de favoritos de peliculas, consumiento las APIs de [TMDB](https://www.themoviedb.org/), login con Authentication de Firebase con correo y contraseña.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+
+## DEMO
+
+[https://watchlist-movies.web.app/](https://watchlist-movies.web.app/)
 
 ## Development server
 
